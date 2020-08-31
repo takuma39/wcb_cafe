@@ -1,10 +1,18 @@
-<header class="page-header wrapper">
-	<h1><%= link_to image_tag("/assets/logo.svg", alt: "WCBカフェホーム", class: "logo"), root_path %></h1>
-	<nav>
-		<ul class="main-nav">
-			<li><%= link_to "News", news_index_path  %></li>
-			<li><%= link_to "Menu", menus_path  %></li>
-			<li><%= link_to "Contact", contacts_path  %></li>
-		</ul>
-	</nav>
-</header>
+<div id="home" class="big-bg"><!-- ------------------------------- -->
+	<header class="page-header wrapper">
+		<h1><%= link_to image_tag("/assets/logo.svg", alt: "WCBカフェホーム", class: "logo"), root_path %></h1>
+		<nav>
+			<ul class="main-nav">
+				<li><%= link_to "News", news_index_path  %></li>
+				<li><%= link_to "Menu", menus_path  %></li>
+				<li><%= link_to "Contact", contacts_path  %></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="home-content wrapper">
+		<h2 class="page-title">We'll Make Your day</h2>
+		<p>おしゃれなカフェで癒されてみませんか？無添加の食材で体の中からリフレッシュ。</p>
+		<%= link_to "メニューを見る", menus_path, class: "button" %>
+	</div>
+</div><!-- home--------------------------------------------------- -->
