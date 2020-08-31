@@ -1,1 +1,10 @@
-test
+<header class="page-header">
+	<h1><%= link_to image_tag("/assets/logo.svg", alt: "WCBカフェホーム", class: "logo"), root_path %></h1>
+	<nav>
+		<ul class="main-nav">
+			<li><%= link_to "News", news_index_path  %></li>
+			<li><%= link_to "Menu", menus_path  %></li>
+			<li><%= link_to "Contact", contacts_path  %></li>
+		</ul>
+	</nav>
+</header>
