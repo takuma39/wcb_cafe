@@ -119,8 +119,17 @@ img {
 }
 
 #home {
-	background-image: url(/assets/main-bg.jpg);
+	background-image: url(/assets/main-bg.jpg), linear-gradient(#c9ffbf, #ffafbd); /*ブレンドモードでグラデーションを重ねる*/
+	background-blend-mode: luminosity; /*ブレンドモードでグラデーションを重ねる*/
 	min-height: 100vh;
+
+	/*ブレンドモード*/
+/*	background-color: #0bd;
+	background-blend-mode: hard-light;*/
+
+	/*グラデーションのみ*/
+	/*background-image: linear-gradient(#c9ffbf, #ffafbd);*/
+
 }
 
 #home .page-title {
