@@ -13,3 +13,66 @@
  *= require_tree .
  *= require_self
  */
+
+
+/*共通部分*/
+/*------------------------------------------*/
+@charset "UTF-8";
+
+html {
+	font-size: 100%;
+}
+
+body {
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+	line-height: 1.7;
+	color: #432;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+
+/*header*/
+/*------------------------------------------*/
+.logo {
+	width: 210px;
+	margin-top: 14px;
+}
+
+.main-nav {
+	display: flex; /*横並び*/
+	font-size: 1.25rem;
+	text-transform: uppercase; /*すべての文字を大文字に変換します。*/
+	margin-top: 34px;
+	list-style: none;
+}
+
+.main-nav li {
+	margin-left: 36px;
+}
+
+.main-nav a{
+	color: #432;
+}
+
+.main-nav a:hover {
+	color: #0bd;
+}
+
+.page-header {
+	display: flex; /*横並び*/
+	justify-content: space-between; /*両端設置*/
+}
+
+.wrapper {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 4%;
+}
