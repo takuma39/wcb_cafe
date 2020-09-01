@@ -276,6 +276,29 @@ aside p {
 	order: 1; /*配置の順番*/
 }
 
+
+/*MENU*/
+/*------------------------------------------*/
+#menu {
+	background-image: url(/assets/menu-bg.jpg);
+	min-height: 100vh;
+}
+
+.menu-content {
+	max-width: 560px;
+	margin-top: 10%;
+}
+
+.menu-content .page-title {
+	text-align: center;
+}
+
+.menu-content p {
+	font-size: 1.125rem;
+	margin: 10px 0 0;
+}
+
+
 /*レスポンシブ*/
 @media (max-width: 600px) {
 	/*header*/
@@ -363,4 +386,16 @@ aside p {
 	.ad {
 		display: none;
 	}
+
+
+	/*MENU*/
+/*------------------------------------------*/
+	.menu-contents {
+		margin-top: 20%;
+	}
+
+
+
+
+
 }
