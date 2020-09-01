@@ -183,7 +183,8 @@ footer p {
 
 /*メインエリア*/
 article {
-	width: 74%;
+	width: 60%;
+	order: 2; /*配置の順番*/
 }
 
 .post-info {
@@ -236,6 +237,7 @@ article p {
 /*サイドバー*/
 aside {
 	width: 22%;
+	order: 3; /*配置の順番*/
 }
 
 .sub-title {
@@ -268,6 +270,11 @@ aside p {
 	color: #0bd;
 }
 
+
+/*ad*/
+.ad {
+	order: 1; /*配置の順番*/
+}
 
 /*レスポンシブ*/
 @media (max-width: 600px) {
@@ -350,5 +357,10 @@ aside p {
 
 	.post-title, .post-cat {
 		margin-left: 80px;
+	}
+
+	/*ad*/
+	.ad {
+		display: none;
 	}
 }
