@@ -267,3 +267,88 @@ aside p {
 .sub-menu a:hover {
 	color: #0bd;
 }
+
+
+/*レスポンシブ*/
+@media (max-width: 600px) {
+	/*header*/
+	/*------------------------------------------*/
+	h1 {
+		color: #0bd;
+	}
+
+	.page-title {
+		font-size: 2.5rem;
+	}
+
+	/*header*/
+	.main-nav {
+		font-size: 1rem;
+		margin-top: 10px;
+	}
+
+	.main-nav li {
+		margin: 0 20px
+	}
+
+	.page-header {
+		flex-direction: column;
+		align-items: center; /*子要素を中央寄せ*/
+	}
+
+
+	/*TOP*/
+	/*------------------------------------------*/
+	/*HOME*/
+	.home-contents {
+		/*margin-top: 20%;*/
+	}
+
+
+
+	/*NEWS*/
+	/*------------------------------------------*/
+	.news-contents {
+		flex-direction: column;
+	}
+
+	article, aside {
+		width: 100%;
+	}
+
+	#news .page-title {
+		margin-top: 30px;
+	}
+
+	aside {
+		margin-top: 60px;
+	}
+
+	.post-info {
+		margin-bottom: 30px;
+	}
+
+	.post-data {
+		width: 70px;
+		height: 70px;
+		font-size: 1rem;
+	}
+
+	.post-data span {
+		font-size: 0.875rem;
+		padding-top: 2px;
+	}
+
+	.post-title {
+		font-size: 1.375rem;
+	}
+
+	.post-cat {
+		font-size: 0.875rem;
+		margin-top: 10px;
+	}
+
+	.post-title, .post-cat {
+		margin-left: 80px;
+	}
+}
