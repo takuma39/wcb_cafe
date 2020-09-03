@@ -360,6 +360,30 @@ input[type="submit"] {
 	line-height: 1;
 }
 
+#location {
+	padding: 4% 0;
+}
+
+#location .wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.location-info {
+	width: 22%;
+}
+
+.location-info p {
+	padding: 12px 10px;
+}
+
+.location-map {
+	width: 74%;
+}
+
+iframe {
+	width: 100%;
+}
 
 /*レスポンシブ*/
 @media (max-width: 600px) {
