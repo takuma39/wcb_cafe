@@ -523,4 +523,17 @@ iframe {
 		max-width: 100%;
 	}
 
+	/*MAP SNS*/
+	#location .wrapper, #sns .wrapper {
+		flex-direction: column;
+	}
+
+	.location-info, .location-map, .sns-box {
+		width: 100%;
+	}
+
+	.sns-box {
+		margin-bottom: 30px;
+	}
+
 }
