@@ -6,6 +6,10 @@ Rails.application.routes.draw do
     passwords:     'admins/passwords',
   }
 
+  namespace :admins do
+    root 'homes#top'
+  end
+
 
   root 'homes#top'
   resources :contacts, only:[:index]
