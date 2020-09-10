@@ -1,1 +1,14 @@
 homes top
+
+<% unless admin_signed_in? %>
+<div class="row"><!-- --------------------row-------------------- -->
+	<div style="text-align: center">
+		<%= link_to new_admin_session_path do %>
+			<div class="btn-lg btn-primary">
+				ログイン
+			</div>
+		<% end %>
+    </div>
+
+</div><!-- --------------------------row------------------------- -->
+<% end %>
