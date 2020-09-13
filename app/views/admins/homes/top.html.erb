@@ -1,6 +1,8 @@
-homes top
+<div class="row"><!-- --------------------row-------------------- -->
+</div><!-- --------------------------row------------------------- -->
 
 <% unless admin_signed_in? %>
+
 <div class="row"><!-- --------------------row-------------------- -->
 	<div style="text-align: center">
 		<%= link_to new_admin_session_path do %>
@@ -11,4 +13,40 @@ homes top
     </div>
 
 </div><!-- --------------------------row------------------------- -->
+
 <% end %>
+
+<div class="row"><!-- --------------------row-------------------- -->
+	<div style="text-align: center">
+		<%= link_to admins_menus_path do %>
+			<div class="btn-lg btn-primary">
+				MENU
+			</div>
+		<% end %>
+    </div>
+
+</div><!-- --------------------------row------------------------- -->
+
+
+<div class="row"><!-- --------------------row-------------------- -->
+	<div style="text-align: center">
+		<%= link_to admins_news_index_path do %>
+			<div class="btn-lg btn-primary">
+				NEWS
+			</div>
+		<% end %>
+    </div>
+
+</div><!-- --------------------------row------------------------- -->
+
+
+<div class="row"><!-- --------------------row-------------------- -->
+	<div style="text-align: center">
+		<%= link_to admins_contacts_path do %>
+			<div class="btn-lg btn-primary">
+				CONTACTS
+			</div>
+		<% end %>
+    </div>
+
+</div><!-- --------------------------row------------------------- -->
