@@ -8,6 +8,9 @@ Rails.application.routes.draw do
 
   namespace :admins do
     root 'homes#top'
+    resources :contacts, only:[:index]
+    resources :menus, only:[:index]
+    resources :news, only:[:index]
   end
 
 
