@@ -1,1 +1,90 @@
 news.index.html
+<ul>
+	<li><%= link_to "新規投稿", new_admins_news_path %></li>
+	<li><%= link_to "一覧", admins_news_index_path %></li>
+</ul>
+
+<% @news.each do |i|%>
+	<%= i.id %>
+	<%= i.day %>
+	<%= i.title %>
+	<%= i.category %>
+	<%= i.content %>
+	<%= i.sub_title %>
+	<%= i.sub_content %>
+<% end %>
+
+<div id="news" class="big-bg"><!-- ------------------------------- -->
+	<header class="page-header wrapper">
+		<h1><%= link_to image_tag("/assets/logo.svg", alt: "WCBカフェホーム", class: "logo"), root_path %></h1>
+		<nav>
+			<ul class="main-nav">
+				<li><%= link_to "News", news_index_path  %></li>
+				<li><%= link_to "Menu", menus_path  %></li>
+				<li><%= link_to "Contact", contacts_path  %></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="wrapper">
+		<h2 class="page-title">News</h2>
+	</div> <!-- wrapper -->
+</div><!-- home--------------------------------------------------- -->
+
+
+<div class="news-contents wrapper"><!-- -------------------------- -->
+
+	<article> <!-- ----------------------------------------------- -->
+		<header class="post-info">
+			<h2 class="post-title">店内ギャラリーの絵が新しくなりました</h2>
+			<p class="post-data">3/30 <span>2019</span></p>
+			<p class="post-cat">カテゴリー：お店の紹介</p>
+		</header>
+		<img src="/assets/wall.jpg" alt="店内の様子">
+		<p>
+	        体に優しい自然食を提供する、WCB CAFE。無添加の食材を利用したメニューが特徴です。
+	        おいしいブレンドコーヒーとヘルシーなオーガニックフードで体の内側から癒やされてください。
+	        体に優しい自然食を提供する、WCB CAFE。無添加の食材を利用したメニューが特徴です。
+	        おいしいブレンドコーヒーとヘルシーなオーガニックフードで体の内側から癒やされてください。
+    	</p>
+   		 <p>
+	        体に優しい自然食を提供する、WCB CAFE。無添加の食材を利用したメニューが特徴です。
+	        おいしいブレンドコーヒーとヘルシーなオーガニックフードで体の内側から癒やされてください。
+	        体に優しい自然食を提供する、WCB CAFE。無添加の食材を利用したメニューが特徴です。
+	        おいしいブレンドコーヒーとヘルシーなオーガニックフードで体の内側から癒やされてください。
+	        体に優しい自然食を提供する、WCB CAFE。無添加の食材を利用したメニューが特徴です。
+	        おいしいブレンドコーヒーとヘルシーなオーガニックフードで体の内側から癒やされてください。
+   		</p>
+   		<p>体に優しい自然食を提供する、WCB CAFE。</p>
+	</article> <!-- ----------------------------------------------- -->
+
+	<aside> <!-- ----------------------------------------------- -->
+		<ul class="sub-menu">
+			<li><a href="#">お店の紹介</a></li>
+			<li><a href="#">期間限定メニュー</a></li>
+			<li><a href="#">イベント</a></li>
+			<li><a href="#">お客様との会話</a></li>
+		</ul>
+
+		<h3 class="sub-title">このお店について</h3>
+		<p>
+			体に優しい自然食を提供する、WCB CAFE。無添加の食材を利用したメニューが特徴です。
+        	おいしいブレンドコーヒーとヘルシーなオーガニックフードで体の内側から癒やされてください。
+		</p>
+	</aside> <!-- ----------------------------------------------- -->
+
+	<div class="ad">
+		<img src="/assets/banner.jpg" alt="新メニュー登場">
+	</div>
+
+</div><!-- news-contents----------------------------------------- -->
+
+
+
+
+
+<footer><!-- ---------------------------------------------------- -->
+	<div class="wrapper">
+		<p><small>&copy; 2019 Manabox</small></p>
+	</div> <!-- wrapper -->
+</footer><!-- footer--------------------------------------------- -->

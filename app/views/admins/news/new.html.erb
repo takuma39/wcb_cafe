@@ -1,0 +1,82 @@
+news.new.html
+
+<div class="row"><!-- --------------------row-------------------- -->
+    <div class="col-md-5">
+        <h2><%= link_to "戻る", admins_news_index_path, class: "btn btn-primary" %></h2>
+    </div>
+
+    <div class="col-md-6">
+        <h2>新規投稿</h2>
+    </div>
+
+    <div class="col-md-1">
+    </div>
+</div><!-- --------------------------row------------------------- -->
+
+
+<%= form_for @news, url: admins_news_index_path do |f| %>
+
+<div class="row"><!-- --------------------row-------------------- -->
+	<div class="col-md-12">
+        <h5>日付</h5>
+    </div>
+
+    <div class="col-md-12">
+        <%= f.date_select :day, use_month_numbers: true %>
+    </div>
+
+    <!--  -->
+
+    <div class="col-md-12">
+        <h5>タイトル</h5>
+    </div>
+
+    <div class="col-md-12">
+        <%= f.text_field :title, autofocus: true, placeholder:'タイトル', size: "160" %>
+    </div>
+
+    <div class="col-md-12">
+        <h5>カテゴリー</h5>
+    </div>
+
+    <div class="col-md-12">
+        <%= f.text_field :category, autofocus: true, placeholder:'カテゴリー', size: "160" %>
+    </div>
+
+    <div class="col-md-12">
+        <h5>コンテント</h5>
+    </div>
+
+    <div class="col-md-12">
+        <%= f.text_area :content, autofocus: true, placeholder: 'コンテント', size: "20x15", class: "form-control" %>
+    </div>
+
+<!--  -->
+    <div class="col-md-12">
+        <h5>サブタイトル</h5>
+    </div>
+
+    <div class="col-md-12">
+        <%= f.text_field :sub_title, autofocus: true, placeholder:'サブタイトル', size: "160" %>
+    </div>
+
+    <div class="col-md-12">
+        <h5>サブコンテント</h5>
+    </div>
+
+    <div class="col-md-12">
+        <%= f.text_area :sub_content, autofocus: true, placeholder: 'サブコンテント', size: "20x15", class: "form-control" %>
+    </div>
+</div><!-- --------------------------row------------------------- -->
+
+<div class="row"><!-- --------------------row-------------------- -->
+
+    <div class="col-md-11">
+    </div>
+
+    <div class="col-md-1">
+        <%= f.submit "投稿", class: "btn btn-success btn-lg" %>
+    </div>
+</div><!-- --------------------------row------------------------- -->
+
+<% end %>
