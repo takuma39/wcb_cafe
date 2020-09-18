@@ -10,7 +10,7 @@ Rails.application.routes.draw do
     root 'homes#top'
     resources :contacts, only:[:index]
     resources :menus, only:[:index]
-    resources :news, only:[:index]
+    resources :news
   end
 
 
