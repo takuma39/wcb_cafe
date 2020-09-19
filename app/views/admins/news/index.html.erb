@@ -31,6 +31,45 @@ news.index.html
 	</div> <!-- wrapper -->
 </div><!-- home--------------------------------------------------- -->
 
+<% @news.each do |i|%>
+<div class="news-contents wrapper"><!-- -------------------------- -->
+
+	<article> <!-- ----------------------------------------------- -->
+		<header class="post-info">
+			<h2 class="post-title"><%= i.title %></h2>
+			<p class="post-data"><%= i.day.strftime("%-m/%-d") %> <span><%= i.day.strftime("%Y") %></span></p>
+			<p class="post-cat">カテゴリー：<%= i.category %></p>
+		</header>
+		<img src="/assets/wall.jpg" alt="店内の様子">
+		<%= i.content %>
+	</article> <!-- ----------------------------------------------- -->
+
+	<aside> <!-- ----------------------------------------------- -->
+		<ul class="sub-menu">
+			<li><a href="#">お店の紹介</a></li>
+			<li><a href="#">期間限定メニュー</a></li>
+			<li><a href="#">イベント</a></li>
+			<li><a href="#">お客様との会話</a></li>
+		</ul>
+
+		<h3 class="sub-title"><%= i.sub_title %></h3>
+		<p>
+			<%= i.sub_content %>
+		</p>
+	</aside> <!-- ----------------------------------------------- -->
+
+	<div class="ad">
+		<img src="/assets/banner.jpg" alt="新メニュー登場">
+	</div>
+
+</div><!-- news-contents----------------------------------------- -->
+<% end %>
+
+
+
+
+
+
 
 <div class="news-contents wrapper"><!-- -------------------------- -->
 
