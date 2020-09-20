@@ -40,7 +40,7 @@ news.index.html
 			<p class="post-data"><%= i.day.strftime("%-m/%-d") %> <span><%= i.day.strftime("%Y") %></span></p>
 			<p class="post-cat">カテゴリー：<%= i.category %></p>
 		</header>
-		<img src="/assets/wall.jpg" alt="店内の様子">
+		<%= attachment_image_tag i, :news_image, :fill, 550, 400, format: 'jpg' %>
 		<%= i.content %>
 	</article> <!-- ----------------------------------------------- -->
 

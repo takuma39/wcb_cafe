@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 2020_09_08_134150) do
     t.string "category"
     t.string "sub_title"
     t.text "sub_content"
+    t.string "news_image_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

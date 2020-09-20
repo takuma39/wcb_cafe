@@ -39,7 +39,8 @@ class Admins::NewsController < ApplicationController
 		    :day,
 		    :category,
 		    :sub_title,
-		    :sub_content
+		    :sub_content,
+		    :news_image
 		    )
 	end
 end
