@@ -8,6 +8,7 @@ class CreateNews < ActiveRecord::Migration[5.2]
     	t.string :category
     	t.string :sub_title
     	t.text :sub_content
+        t.string :news_image_id
 
     	t.timestamps
     end
